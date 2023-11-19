@@ -15,14 +15,14 @@ program
     try {
       const response = await axios.post('http://localhost:3000/insert-log', {
         // Provide log data here
-            "level": "version info 2",
-            "message": "Testing Log version 1 Ingestor",
-            "resourceId": "server-231",
-            "traceId": "abc23",
+            "level": "version info 10",
+            "message": "Testing Log version 10 Ingestor",
+            "resourceId": "server-431",
+            "traceId": "abc43",
             "spanId": "span56",
-            "commit": "Commit for 56789",
+            "commit": "Commit for 86789",
             "metadata": {
-              "parentResourceId": "server-789"
+              "parentResourceId": "server-889"
             }   
         });
 
@@ -38,7 +38,7 @@ program
   .description('Search logs within a date range')
   .action(async (startDate, endDate) => {
     try {
-      const response = await axios.get(`http://localhost:3000/logs?startDate=${startDate}&endDate=${endDate}`);
+      const response = await axios.get(`http://localhost:3000/logs/date-range?start=${startDate}&end=${endDate}`);
 
       console.log('Queried Logs:', response.data);
     } catch (error) {
