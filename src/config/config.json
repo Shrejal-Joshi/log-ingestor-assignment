@@ -1,0 +1,24 @@
+{
+    "development": {
+      "username": "joshi",
+      "password": "1999",
+      "database": "logdb",
+      "host": "localhost",
+      "dialect": "postgres"
+    },
+    "test": {
+      "username": "joshi",
+      "password": "1999",
+      "database": "logdb",
+      "host": "localhost",
+      "dialect": "postgres"
+    },
+    "production": {
+      "username": "joshi",
+      "password": "1999",
+      "database": "logdb",
+      "host": "localhost",
+      "dialect": "postgres"
+    }
+  }
+  
